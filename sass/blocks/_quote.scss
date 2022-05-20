@@ -1,0 +1,61 @@
+.quote__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 73px 0px;
+}
+
+.quote__line {
+  display: inline-block;
+  width: 140px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.quote__list {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 235px;
+    background-image: url("../../images/quote-left.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 1100px;
+    background-image: url("../../images/quote-right.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    content: "";
+  }
+}
+
+.quote__text {
+  position: relative;
+  width: 100%;
+  max-width: 753px;
+  margin: 43px 244px 35px 313px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #949494;
+}
+
+.quote__subject {
+    margin: 35px 0px 0px ;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+}

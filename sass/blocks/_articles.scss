@@ -1,0 +1,239 @@
+.articles {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles__inner {
+  padding: 216px 0px 265px;
+}
+
+.articles__tittle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.articles__list {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articles__item {
+  width: 100%;
+  max-width: 305px;
+  border-radius: 5px;
+}
+
+.articles-img > img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.articles-info {
+  padding: 21px 22px 36px 30px;
+  border: 1px solid #e4e4e2;
+  background-color: #f9f8f8;
+  border-top: 1px solid transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &__date {
+    display: inline-block;
+    margin-left: 182px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+  }
+
+  &__tittle {
+    display: inline-block;
+    width: 100%;
+    max-width: 182px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  &__text {
+    margin: 10px 0px 34px;
+    width: 100%;
+    max-width: 244px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    padding: 2px 0px;
+    transition: all 0.15s ease;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      top: 0px;
+      left: -28px;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background-image: url("../../images/pet.svg");
+      background-repeat: no-repeat;
+      background-size: 23px 21px;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 6px;
+      z-index: -1;
+      width: 100%;
+      height: 0;
+      background-color: #f4ffad;
+      transition: all 0.5 ease;
+      content: "";
+    }
+
+    &:hover::after {
+      height: 15%;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.articles__itemsecond {
+  display: flex;
+}
+
+.articles-imgsecond > img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.articles-infosecond {
+  width: 100%;
+  max-width: 335px;
+  padding: 41px 34px 31px 30px;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-left: 1px solid transparent;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    display: flex;
+  }
+
+  &__headingitem + .articles-infosecond__headingitem {
+    margin-left: 8px;
+  }
+
+  &__headinglink {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3d9cea;
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949494;
+  }
+
+  &__tittle {
+    display: inline-block;
+    width: 100%;
+    max-width: 193px;
+    margin-top: 29px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 29px;
+    color: #333333;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 270px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    padding: 2px 0px;
+    transition: all 0.15s ease;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      top: 0px;
+      left: -28px;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background-image: url("../../images/pet.svg");
+      background-repeat: no-repeat;
+      background-size: 23px 21px;
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 6px;
+      z-index: -1;
+      width: 100%;
+      height: 0;
+      background-color: #f4ffad;
+      transition: all 0.5 ease;
+      content: "";
+    }
+
+    &:hover::after {
+      height: 20%;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

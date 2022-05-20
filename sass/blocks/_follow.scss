@@ -1,0 +1,92 @@
+.follow {
+  position: relative;
+  background-image: url("../../images/follow-bgi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: -134px;
+    right: calc(50% - 665px);
+    // // bottom: 0;
+    // left: calc( 100% - 100px );
+    width: 613px;
+    height: 481px;
+    background-image: url("../../images/follow-dog.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.follow__inner {
+  width: 100%;
+  max-width: 544px;
+  padding: 90px 0px;
+  margin-left: 222px;
+}
+
+.follow__tittle {
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.follow__formlist {
+  display: flex;
+  align-items: center;
+}
+
+.follow__input {
+  display: inline-block;
+  width: 100%;
+  max-width: 335px;
+  padding: 18px 22px 12px;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+// .follow__input:focus{
+//     border: 2px solid black;
+// }
+
+// .follow__input:invalid{
+//     border: 2px solid red;
+// }
+
+.follow__input:valid {
+  border: 2px solid #90ee90;
+}
+
+.follow__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 14px 52px;
+  margin-left: 21px;
+  color: #ffffff;
+  border: 0px solid transparent;
+  background-color: #333333;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(51, 51, 51, 0.8);
+  }
+
+  &:active {
+    background-color: rgba(51, 51, 51, 0.6);
+  }
+}
+// form:invalid{
+//     & input{
+//         border: 2px solid #333;
+//     }
+// }
